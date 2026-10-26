@@ -1,0 +1,26 @@
+# Build outputs
+target/
+dist/
+node_modules/
+*.log
+
+# Uploaded files (kept out of git; they live on disk next to the backend)
+uploads/
+backend/uploads/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+application-local.properties
+
+# IDE / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/dist/
+frontend/node_modules/
