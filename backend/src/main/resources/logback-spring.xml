@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Structured, single-line logs: timestamp, level, thread, logger, message.
+         No request bodies, tokens, passwords or health data are logged by the
+         application code; keep it that way when adding new log lines. -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+    <logger name="com.healthrecords" level="INFO" />
+    <logger name="org.hibernate.SQL" level="WARN" />
+</configuration>
